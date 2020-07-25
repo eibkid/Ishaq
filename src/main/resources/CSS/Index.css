@@ -1,0 +1,137 @@
+header.mainhead {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(0deg, #6a11cb 0%, #2575fc 100%);
+    height: 800px;
+}
+
+header.mainhead .mainhead-content {
+    position: relative;
+}
+
+header.mainhead .mainhead-content .mainhead-heading {
+    font-size: 4rem;
+}
+
+header.mainhead .mainhead-content .mainhead-subheading {
+    font-size: 2rem;
+}
+
+header.mainhead .mainhead-content .mainhead-heading:hover,
+.mainhead-subheading:hover {
+    color: #6a11cb;
+}
+
+.bg-circle {
+    z-index: 0;
+    position: absolute;
+    border-radius: 100%;
+    background: linear-gradient(0deg, #ec004f 0%, #cc96a7 100%);
+    animation: scaleUp 3s !important;
+}
+
+.bg-circle:hover {
+    transition: all 0.5s ease;
+    transform: scale(1.2);
+}
+
+header.mainhead .bg-circle-1 {
+    height: 30rem;
+    width: 30rem;
+    bottom: 40rem;
+}
+
+header.mainhead .bg-circle-2 {
+    height: 25rem;
+    width: 25rem;
+    top: 25rem;
+    left: -8rem;
+}
+
+header.mainhead .bg-circle-3 {
+    height: 15rem;
+    width: 15rem;
+    top: 23rem;
+    right: -5rem;
+}
+
+header.mainhead .bg-circle-4 {
+    height: 20rem;
+    width: 20rem;
+    top: -6rem;
+    right: 35%;
+}
+
+header.mainhead .bg-circle-5 {
+    height: 40rem;
+    width: 40rem;
+    top: -20rem;
+    right: -22rem;
+}
+
+header.mainhead .bg-circle-6 {
+    height: 35rem;
+    width: 35rem;
+    top: 30rem;
+    right: 0rem;
+}
+
+/* Bubble Button Settings for the index page */
+.mainhead-content a {
+    color: white;
+    font-size: x-large;
+    padding-top: 15px;
+    border-top: 2px solid #6a11cb;
+    border-left: 2px solid #6a11cb;
+    border-right: 8px solid #6a11cb;
+    border-bottom: 8px solid #6a11cb;
+}
+
+.btn {
+    width: 10rem;
+    height: 5rem;
+    border-left: 3px solid #6a11cb;
+    border-bottom: 5px solid #6a11cb;
+    animation: scaleUp 2s;
+}
+
+.btn:active,
+.btn:focus,
+.btn:hover {
+    color: white !important;
+    background-color: #ec004f !important;
+    border-color: #ec004f !important;
+}
+
+@media (min-width: 992px) {
+    header.mainhead {
+        padding-top: calc(10rem + 55px);
+        padding-bottom: 10rem;
+    }
+    header.mainhead .mainhead-content .mainhead-heading {
+        font-size: 6rem;
+    }
+    header.mainhead .mainhead-content .mainhead-subheading {
+        font-size: 4rem;
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 600px) {
+    .bg-circle {
+        display: none;
+    }
+
+    .mainhead-content {
+        font-size: 20px;
+        margin-top: 50%;
+    }
+}
